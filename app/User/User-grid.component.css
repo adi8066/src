@@ -1,0 +1,18 @@
+.user-grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+  .user-grid th, .user-grid td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .user-grid th {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+
+.error {
+  color: red;
+}

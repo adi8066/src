@@ -1,0 +1,19 @@
+<div *ngIf="error" class="error">{{ error }}</div>
+
+<table *ngIf="users.length" class="user-grid">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.phoneNumber }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Add a message when no users are available -->
+<p *ngIf="!users.length && !error">No user details available.</p>
